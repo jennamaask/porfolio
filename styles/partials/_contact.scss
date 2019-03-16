@@ -1,0 +1,7 @@
+.contact h3 {
+    @include heading(1.5rem)
+}
+
+.contact h2 {
+    @include heading(5rem)
+}

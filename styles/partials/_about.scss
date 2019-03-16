@@ -1,0 +1,14 @@
+.about h3 {
+    @include heading(1.5rem);
+}
+.about h2 {
+    @include heading(5rem);
+}
+
+.about {
+    height: 100vh;
+}
+
+.about img {
+    height: 400px;
+}

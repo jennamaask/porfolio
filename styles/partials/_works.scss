@@ -1,0 +1,7 @@
+.works h3 {
+    @include heading(1.5rem)
+}
+
+.works h2 {
+    @include heading(5rem)
+}

@@ -1,0 +1,30 @@
+header {
+    height: 100vh;
+}
+
+h1 {
+    @include heading(8rem);
+}
+
+header h3 {
+    @include heading(2rem);
+}
+
+a {
+    @include bodyText(1.5rem);
+}
+
+ul {
+    text-align: right;
+}
+
+svg {
+    height: 50px;
+}
+
+header .wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

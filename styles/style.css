@@ -134,7 +134,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 body {
   font-size: 125%;
-  background: #1a1717; }
+  background: white; }
 
 ul {
   list-style: none;
@@ -145,34 +145,36 @@ a {
   text-decoration: none; }
 
 .wrapper {
-  width: 1100px;
+  width: 80%;
   margin: 0 auto; }
 
 p {
-  color: white;
+  color: #1a1717;
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6; }
 
 header {
-  height: 100vh; }
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
 
 h1 {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #1a1717;
   line-height: 1;
   margin: 0;
   font-size: 8rem; }
 
 header h3 {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #1a1717;
   line-height: 1;
   margin: 0;
   font-size: 2rem; }
 
 a {
-  color: white;
+  color: #1a1717;
   font-family: "Lato", sans-serif;
   font-size: 1.5rem;
   line-height: 1.6; }
@@ -180,7 +182,14 @@ a {
 ul {
   text-align: right; }
 
-svg {
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+svg.arrow {
   height: 50px; }
 
 header .wrapper {
@@ -195,16 +204,31 @@ header .wrapper {
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
+.dynamicBackground {
+  background: white; }
+
+.dynamicBackground path:first-child {
+  fill: #fafafa; }
+
+.dynamicBackground path:nth-child(2) {
+  fill: #f0f0f0; }
+
+.dynamicBackground path:nth-child(3) {
+  fill: whitesmoke; }
+
+.dynamicBackground path:nth-child(4) {
+  fill: white; }
+
 .about h3 {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #1a1717;
   line-height: 1;
   margin: 0;
   font-size: 1.5rem; }
 
 .about h2 {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #1a1717;
   line-height: 1;
   margin: 0;
   font-size: 5rem; }
@@ -212,33 +236,155 @@ header .wrapper {
 .about {
   height: 100vh; }
 
+.about .wrapper {
+  height: 100vh; }
+
+.aboutText {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 100px; }
+
 .about img {
   height: 400px; }
 
 .works h3 {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #1a1717;
+  line-height: 1;
+  margin: 0;
+  font-size: 2rem; }
+
+.works h3.subheading {
+  font-family: "Poppins", sans-serif;
+  color: #1a1717;
   line-height: 1;
   margin: 0;
   font-size: 1.5rem; }
 
 .works h2 {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #1a1717;
   line-height: 1;
   margin: 0;
   font-size: 5rem; }
 
+.works p {
+  margin: 0;
+  font-size: 1.3rem; }
+
+.works {
+  min-height: 100vh; }
+
+p.description {
+  font-size: 1rem;
+  width: 70%;
+  text-align: center; }
+
+.image {
+  width: 60%;
+  margin-bottom: 80px;
+  -webkit-transition: width .5s;
+  -o-transition: width .5s;
+  transition: width .5s; }
+
+.image:hover {
+  width: 70%; }
+
+.unit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .unit p {
+    white-space: normal; }
+
+.works a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 70%; }
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 10px;
+  text-align: left; }
+
+.glide {
+  padding: 70px 0; }
+
+.glide__arrow {
+  position: absolute;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+  color: #1a1717;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  top: 40%; }
+
+.glide__arrow--left {
+  left: -40px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.glide__arrow--right {
+  right: -40px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+img {
+  width: 100%;
+  display: block; }
+
 .contact h3 {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #1a1717;
   line-height: 1;
   margin: 0;
   font-size: 1.5rem; }
 
 .contact h2 {
   font-family: "Poppins", sans-serif;
-  color: white;
+  color: #1a1717;
   line-height: 1;
   margin: 0;
   font-size: 5rem; }
+
+.contact {
+  height: 100vh; }

@@ -5,3 +5,7 @@
 .contact h2 {
     @include heading(5rem)
 }
+
+.contact {
+    height: 100vh;
+}

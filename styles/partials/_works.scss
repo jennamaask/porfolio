@@ -1,7 +1,170 @@
 .works h3 {
-    @include heading(1.5rem)
+    @include heading(2rem);
+}
+
+.works h3.subheading {
+    @include heading(1.5rem);
 }
 
 .works h2 {
-    @include heading(5rem)
+    @include heading(5rem);
+}
+
+.works p {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.works {
+    min-height: 100vh;
+}
+
+p.description{
+    font-size: 1rem;
+    width: 70%;
+    text-align: center;
+}
+
+// .worksTop {
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .worksTitle {
+//     text-align: right;
+//     width: 50%;
+//     padding-top: 70px;
+// }
+
+.image {
+    width: 60%;
+    margin-bottom: 80px;
+    transition: width .5s;
+}
+
+.image:hover {
+    width: 70%;
+}
+
+// .slide {
+//     padding: 100px 0;
+//     width: 90%;
+//     margin: 0 auto;
+// }
+
+.unit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+        white-space: normal;
+    }
+}
+
+.works a {
+    display: flex;
+    justify-content: center;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.glide {
+    padding: 70px 0;
+}
+
+.glide__arrow{
+   position: absolute; 
+   text-decoration: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    @include bodyText(1rem);
+    top: 40%;
+}
+.glide__arrow--left {
+    left: -40px;
+    transform: rotate(-90deg);
+}
+
+.glide__arrow--right {
+    right: -40px;
+    transform: rotate(90deg) 
+}
+
+
+// section {
+//     height: 100vh;
+//     .item {
+//         height: 60vh;
+//         display: flex;
+//         justify-content: flex-end;
+//         align-items: center;
+//         position: relative;
+//     }
+//     .text {
+//         width: 30%;
+//         padding-right: 50px;
+//     }
+//     .description {
+//         visibility: hidden;
+//         height: 50px;
+//         font-size: 1.5rem;
+//     }
+//     .description.animated {
+//        visibility: visible;
+//     }
+
+//     .text.hover {
+//         width: 100%;
+//         // top: 50%;
+//         left: 0;
+//         // bottom: 0;
+//         right: 0;
+//         display: flex;
+//         flex-direction: column; 
+//         justify-content: center;
+//         padding-right: 50px;
+//         position: absolute;   
+//     }
+//     h3.hover {
+//         font-size: 5rem;
+//         color: red
+//     }
+//     // .description.hover {
+//     //     font-size: 1.6rem;
+//     //     margin-bottom: 20px;
+//     // }
+//     .image {
+//         width: 70%;
+//         transition: width .5s;
+//     }
+//     .image.hover {
+//         width: 80%;
+//     }
+// }
+
+// .works p {
+//     margin: 0;
+//     transition: font-size .5s;
+// }
+
+img {
+    width: 100%;
+    display: block;
 }

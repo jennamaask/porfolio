@@ -18,3 +18,15 @@
 .about img {
     height: 400px;
 }
+
+@media(max-width: 820px){
+    .about h2 {
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 820px) {
+    .aboutText{
+        width: 70%;
+    }
+}

@@ -45,3 +45,9 @@ p {
     @include bodyText (1rem);
 }
 
+@media(max-width:820px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+

@@ -102,8 +102,10 @@
                 </div>
                 <div class="glide">
                     <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">previous work</button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next work</button>
+                        <button class="glide__arrow glide__arrow--left desktop" data-glide-dir="<">previous work</button>
+                        <button class="glide__arrow glide__arrow--right desktop" data-glide-dir=">">next work</button>
+                        <button class="glide__arrow glide__arrow--left mobile" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right mobile" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
                     </div>
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
@@ -115,7 +117,10 @@
                                 </div>
                                 <div class="image">
                                     <a href="">
-                                        <img src="assets/valentinesImage.png" alt="Landing page of nerdy valentines web page.">
+                                        <picture>
+                                            <source srcset="assets/valentinesImageMobile.png" media="(max-width: 650px)">
+                                            <img src="assets/valentinesImage.png" alt="Landing page of nerdy valentines web page.">
+                                        </picture>
                                     </a>
                                     </div>
                                 <p class="description">Love note generator that uses the numbers API to show off your intelligence along with your feelings.</p>
@@ -128,7 +133,10 @@
                                 </div>
                                 <div class="image">
                                     <a href="">
-                                        <img src="assets/beachImage.png" alt="Landing page of life's a beach web page">
+                                        <picture>
+                                            <source srcset="assets/beachImageMobile.png" media="(max-width: 650px)">
+                                            <img src="assets/beachImage.png" alt="Landing page of life's a beach web page">
+                                        </picture>
                                     </a>
                                     </div>
                                     <p class="description">A web application that applies user preferences to create a virtual beach scene.</p>
@@ -141,7 +149,10 @@
                                 </div>
                                 <div class="image">
                                     <a href="">
-                                        <img src="assets/flyAKiteImage.png" alt="Landing page of go fly a kite web page">
+                                        <picture>
+                                            <source srcset="assets/flyAKiteImageMobile.png" media="(max-width: 650px)">
+                                            <img src="assets/flyAKiteImage.png" alt="Landing page of go fly a kite web page">
+                                        </picture>
                                     </a>
                                     </div>
                                     <p class="description">A online community where great lakes kitesurfers can report on current conditions at popular kiting spots.</p>
@@ -154,7 +165,10 @@
                                 </div>
                                 <div class="image">
                                     <a href="http://sawhorsestudio.ca/" target="_blank">
+                                    <picture>
+                                        <source srcset="assets/sawHorseStudioImageMobile.png" media="(max-width: 650px)" >
                                         <img src="assets/sawHorseStudioImage.png" alt="Landing page of saw horse studio web page">
+                                    </picture>
                                     </a>
                                     </div>
                                 <p class="description">Web site designed and built for my wood working business, Saw Horse Studio </p>

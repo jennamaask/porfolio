@@ -265,11 +265,7 @@ header .wrapper {
   font-size: 5rem; }
 
 .about {
-  height: 100vh;
   padding: 100px 0; }
-
-.about .wrapper {
-  height: 100vh; }
 
 .aboutText {
   width: 50%;
@@ -305,7 +301,6 @@ header .wrapper {
   font-size: 1.2rem; }
 
 .works {
-  min-height: 100vh;
   padding: 50px 0; }
 
 p.description {
@@ -325,7 +320,7 @@ p.description {
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s; }
 
-.image:hover {
+.image:hover, .image:focus {
   -webkit-transform: scale(1.1) translateY(5%);
   -ms-transform: scale(1.1) translateY(5%);
   transform: scale(1.1) translateY(5%); }
@@ -338,6 +333,12 @@ p.description {
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s; }
+
+.glide:focus-within {
+  background: #d6d5d5;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px #bebebe;
+  box-shadow: 0 0 10px #bebebe; }
 
 .unit {
   width: 100%;
@@ -396,7 +397,7 @@ p.description {
   padding: 5px;
   transition: border-bottom .3s; }
 
-.top a:hover {
+.top a:hover, .top a:focus {
   border-bottom: 2px solid #FF0093; }
 
 .text {
@@ -428,7 +429,8 @@ p.description {
   font-size: 1rem;
   line-height: 1.6;
   top: 40%;
-  padding: 5px; }
+  padding: 5px;
+  z-index: 10; }
 
 .glide__arrow--left {
   left: -40px;
@@ -436,7 +438,7 @@ p.description {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-.glide__arrow--left:hover {
+.glide__arrow--left:hover, .glide__arrow--left:focus {
   border-bottom: 2px solid #FF0093;
   left: -39px;
   top: 39.85%; }
@@ -447,7 +449,7 @@ p.description {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-.glide__arrow--right:hover {
+.glide__arrow--right:hover, .glide__arrow--right:focus {
   border-bottom: 2px solid #FF0093;
   right: -39px;
   top: 39.85%; }
@@ -455,6 +457,14 @@ p.description {
 img {
   width: 100%;
   display: block; }
+
+@media (max-width: 1100px) {
+  .image {
+    width: 80%; }
+  .top {
+    width: 80%; }
+  .description {
+    width: 80%; } }
 
 .skills h3 {
   font-family: "Poppins", sans-serif;
@@ -485,6 +495,19 @@ img {
     height: 64px;
     width: 64px; }
 
+@media (max-width: 1000px) {
+  .skillsIcon {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .skillsIcon i, .skillsIcon img {
+      padding: 10px 5px; }
+    .skillsIcon img {
+      width: 74px;
+      height: 84px; } }
+
 .contact h3 {
   font-family: "Poppins", sans-serif;
   color: #2e2727;
@@ -500,7 +523,6 @@ img {
   font-size: 5rem; }
 
 .contact {
-  height: 100vh;
   padding: 100px 0; }
   .contact .title {
     -ms-flex-item-align: start;
@@ -530,11 +552,58 @@ img {
     .contact form textarea {
       width: 100%; }
 
+.contact p {
+  font-size: 1.6rem;
+  width: 60%; }
+
+.contact .email {
+  border-bottom: 2px solid #FF0093;
+  padding: 5px 0;
+  -webkit-transition: border-top .3s;
+  -o-transition: border-top .3s;
+  transition: border-top .3s; }
+
+.contact .email:hover, .contact .email:focus {
+  border-top: 2px solid #FF0093; }
+
+.contact .socials i {
+  font-size: 2rem;
+  -webkit-transition: border-bottom .3s;
+  -o-transition: border-bottom .3s;
+  transition: border-bottom .3s; }
+
 input[type="text"], textarea {
   border: none;
-  border-bottom: 1px solid #2e2727;
-  border-left: 1px solid #2e2727;
+  border-bottom: 2px solid #2e2727;
   background: none;
-  padding: 10px;
+  padding: 15px;
   margin: 10px;
   font-family: "Lato", sans-serif; }
+
+input[type="text"]:focus, textarea:focus {
+  border-bottom: 2px solid #FF0093; }
+
+.contact input[type="submit"] {
+  border: none;
+  background: none;
+  background: #FF0093;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Lato", sans-serif;
+  letter-spacing: .2rem;
+  margin: 20px 0;
+  border-radius: 5px;
+  -webkit-transition: -webkit-box-shadow .3s;
+  transition: -webkit-box-shadow .3s;
+  -o-transition: box-shadow .3s;
+  transition: box-shadow .3s;
+  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  width: 100%; }
+
+input[type="submit"]:focus, input[type="submit"]:hover {
+  -webkit-box-shadow: 0 0 10px #FF0093;
+  box-shadow: 0 0 10px #FF0093; }
+
+.contact .socials a:hover, .contact .socials a:focus {
+  border-bottom: 2px solid #FF0093; }

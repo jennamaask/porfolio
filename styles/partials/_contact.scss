@@ -7,7 +7,6 @@
 }
 
 .contact {
-    height: 100vh;
     padding: 100px 0;
     .title {
         align-self: flex-start
@@ -33,13 +32,59 @@
     }
 }
 
-input[type="text"], textarea{
+.contact p {
+    font-size: 1.6rem;
+    width: 60%;
+}
+
+.contact .email {
+    border-bottom: 2px solid $secondaryColor2;
+    padding: 5px 0;
+    transition: border-top .3s;
+}
+
+.contact .email:hover, .contact .email:focus {
+    border-top: 2px solid $secondaryColor2
+}
+
+.contact .socials i{
+    font-size: 2rem;
+    transition: border-bottom .3s;
+}
+
+input[type="text"], textarea {
     border: none;
-    border-bottom: 1px solid $primaryColor;
-    border-left: 1px solid $primaryColor;
+    border-bottom: 2px solid $primaryColor;
     background:none;
-    padding: 10px;
+    padding: 15px;
     margin: 10px;
     font-family: $bodyFont
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 2px solid $secondaryColor2;
+}
+
+.contact input[type="submit"] {
+    border: none;
+    background: none;
+    background: $secondaryColor2;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: $bodyFont;
+    letter-spacing: .2rem;
+    margin: 20px 0;
+    border-radius: 5px;
+    transition: box-shadow .3s;
+    width: 100%;
+}
+
+input[type="submit"]:focus, input[type="submit"]:hover {
+    box-shadow: 0 0 10px $secondaryColor2;
+}
+
+.contact .socials a:hover, .contact .socials a:focus{
+    border-bottom: 2px solid $secondaryColor2
 }
 

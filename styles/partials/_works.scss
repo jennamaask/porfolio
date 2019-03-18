@@ -16,7 +16,6 @@
 }
 
 .works {
-    min-height: 100vh;
     padding: 50px 0;
 }
 
@@ -31,24 +30,13 @@ p.description{
 }
 
 
-// .worksTop {
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-// .worksTitle {
-//     text-align: right;
-//     width: 50%;
-//     padding-top: 70px;
-// }
-
 .image {
     width: 60%;
     margin: 60px 0;
     transition: transform .5s;
 }
 
-.image:hover {
+.image:hover, .image:focus {
     transform: scale(1.1) translateY(5%);
 }
 
@@ -61,11 +49,11 @@ p.description {
     transition: opacity 1s;
 }
 
-// .slide {
-//     padding: 100px 0;
-//     width: 90%;
-//     margin: 0 auto;
-// }
+.glide:focus-within {
+    background: rgb(214, 213, 213);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(190, 190, 190);
+}
 
 .unit {
     width: 100%;
@@ -103,8 +91,8 @@ p.description {
     padding: 5px;
     transition: border-bottom .3s;
 }
-.top a:hover {
-    border-bottom: 2px solid #FF0093;
+.top a:hover, .top a:focus {
+    border-bottom: 2px solid $secondaryColor2;
 }
 
 .text {
@@ -129,14 +117,15 @@ p.description {
     @include bodyText(1rem);
     top: 40%;
     padding: 5px;
+    z-index: 10;
 }
 .glide__arrow--left {
     left: -40px;
     transform: rotate(-90deg);
 }
 
-.glide__arrow--left:hover {
-    border-bottom: 2px solid #FF0093;
+.glide__arrow--left:hover, .glide__arrow--left:focus {
+    border-bottom: 2px solid $secondaryColor2;
     left: -39px;
     top: 39.85%;
 }
@@ -146,8 +135,8 @@ p.description {
     transform: rotate(90deg) 
 }
 
-.glide__arrow--right:hover {
-    border-bottom: 2px solid #FF0093;
+.glide__arrow--right:hover, .glide__arrow--right:focus {
+    border-bottom: 2px solid $secondaryColor2;
     right: -39px;
     top: 39.85%;
 }
@@ -212,4 +201,16 @@ p.description {
 img {
     width: 100%;
     display: block;
+}
+
+@media(max-width: 1100px){
+   .image{
+    width: 80%;
+   }  
+   .top{
+       width: 80%;
+   }
+   .description{
+       width: 80%;
+   }
 }

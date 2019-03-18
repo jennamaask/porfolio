@@ -19,3 +19,17 @@
         width: 64px;
     }
 }
+
+@media(max-width: 1000px){
+    .skillsIcon {
+        flex-wrap:wrap;
+        justify-content: center; 
+        i, img {
+            padding: 10px 5px;
+        }
+        img {
+            width: 74px;
+            height: 84px;
+        }
+    }
+}

@@ -3,6 +3,7 @@ $bodyFont: 'Lato', sans-serif;
 
 $primaryColor: #2e2727;
 $secondaryColor: white;
+$secondaryColor2: #FF0093;
 
 @mixin heading ($size) {
     font-family: $headingFont;

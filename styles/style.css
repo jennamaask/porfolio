@@ -254,13 +254,100 @@ header .wrapper {
 .dynamicBackground path:nth-child(4) {
   fill: white; }
 
+.dropDownMenu {
+  display: none; }
+
 @media (max-width: 820px) {
   h1 {
     font-size: 6rem; } }
 
 @media (max-width: 482px) {
   h1 {
-    font-size: 5rem; } }
+    font-size: 5rem; }
+  .desktopMenu {
+    display: none; }
+  .menu {
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: block;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    z-index: 30;
+    cursor: pointer; }
+  .menu.white {
+    background: white; }
+  .menu span {
+    background: #2e2727;
+    right: 20px;
+    height: 5px;
+    width: 40px;
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
+  .menu span:nth-child(1) {
+    top: 20px; }
+  .menu span.open:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 30px; }
+  .menu span:nth-child(2) {
+    top: 32px; }
+  .menu span.open:nth-child(2) {
+    width: 0;
+    opacity: 0; }
+  .menu span:nth-child(3) {
+    top: 44px; }
+  .menu span.open:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 30px; }
+  nav.dropDownMenu {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    -webkit-transition: right .8s;
+    -o-transition: right .8s;
+    transition: right .8s;
+    background: rgba(255, 255, 255, 0.9);
+    z-index: 20; }
+    nav.dropDownMenu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      height: 100vh;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    nav.dropDownMenu a {
+      font-size: 3rem; }
+    nav.dropDownMenu i {
+      font-size: 2rem;
+      margin: 0 20px; }
+  nav.dropDownMenu.open {
+    right: 0; }
+  header .wrapper {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  header .title {
+    margin-top: 150px; } }
 
 .about h3 {
   font-family: "Poppins", sans-serif;

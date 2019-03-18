@@ -5,6 +5,8 @@ $worksP = $(".text p");
 $description = $(".description");
 $anchor = $("a");
 $image = $(".image");
+$menu = $(".menu");
+$about = $(".about");
 
 app = {}
 
@@ -74,7 +76,26 @@ app.init = () => {
         $(".description").addClass("visible");
     }, () => {
         $(".description").removeClass("visible");
+    });
+    $menu.on("click", ()=> {
+        $("span").toggleClass("open");
+        $(".dropDownMenu").toggleClass("open");
     })
+    $(".dropDownMenu a").on("click", ()=> {
+        $("span").toggleClass("open");
+        $(".dropDownMenu").toggleClass("open");
+    })
+    $(document).scroll(()=> {
+        const position1 = $about.offset().top;
+        const scrollPos = $(document).scrollTop();
+
+        if(scrollPos === 0 || scrollPos < position1) {
+            $menu.removeClass("white");
+        } else if (scrollPos >= position1) {
+            $menu.addClass("white");
+        }
+    })
+    
 
 }
 $(function(){

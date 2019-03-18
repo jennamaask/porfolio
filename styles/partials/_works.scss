@@ -195,3 +195,21 @@ img {
         width: 100%;
     }
 }
+
+@media(max-width: 482px) {
+    .top p:nth-of-type(1) {
+        font-size: 1rem;
+    }
+    .works h2 {
+        font-size: 3rem;
+    }
+    .image {
+        margin: 15px 0;
+    }
+}
+
+@media(max-width: 400px){
+    .top p:nth-of-type(1) {
+        font-size: .8rem;
+    }
+}

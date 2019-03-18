@@ -33,3 +33,12 @@
         }
     }
 }
+@media(max-width: 400px){
+    .skillsIcon i {
+        font-size: 3rem;
+    }
+    .skillsIcon img {
+        width: 88px;
+        height: 68px;
+    }
+}

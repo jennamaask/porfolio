@@ -20,6 +20,26 @@ ul {
     text-align: right;
 }
 
+nav a {
+    transition: border-bottom .3s;
+    padding: 0 10px;
+}
+
+.socials a {
+    padding: 0 10px;
+    i {
+        font-size: 1rem;
+    }
+}
+
+nav a:hover {
+    border-bottom: 2px solid #FF0093
+}
+
+header a {
+    text-align: center;
+}
+
 .overlay {
     position: absolute;
     top: 0;

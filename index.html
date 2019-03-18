@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato|Poppins:600" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.6/css/glide.core.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet"
+            href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.6/css/glide.theme.min.css" /> -->
     <link rel="stylesheet" href="styles/style.css">
     <title>Jenna Maaskant</title>
@@ -16,9 +20,10 @@
             <div class="wrapper">
                 <nav>
                     <ul>
-                        <li><a href="#">About.</a></li>
-                        <li><a href="#">Works.</a></li>
-                        <li><a href="#">Contact.</a></li>
+                        <li><a href="#about">About.</a></li>
+                        <li><a href="#works">Works.</a></li>
+                        <li><a href="#contact">Contact.</a></li>
+                        <li class="socials"><a href=""><i class="fab fa-linkedin-in"></i></a><a href=""><i class="fab fa-twitter"></i></a><a href=""><i class="fab fa-github"></i></a></li>
                     </ul>
                 </nav>
                 <div class="title">
@@ -27,18 +32,20 @@
                     </h1>
                     <h3>Nice to meet you.</h3>
                 </div>
-                <svg class="arrow" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
-                    xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"
-                    style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                    <switch>
-                        <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1"
-                            height="1" />
-                        <g i:extraneous="self">
-                            <polygon fill="#fff" points="2.5,30 10.1,22.5 50,62.4 89.9,22.5 97.5,30 50,77.5   " />
-                        </g>
-                    </switch>
-                </svg>
+                <a href="#about">
+                    <svg class="arrow" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                        xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"
+                        style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <switch>
+                            <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1"
+                                height="1" />
+                            <g i:extraneous="self">
+                                <polygon fill="#FF0093" points="2.5,30 10.1,22.5 50,62.4 89.9,22.5 97.5,30 50,77.5   " />
+                            </g>
+                        </switch>
+                    </svg>
+                </a>
             </div>
         </div>
             <svg class="dynamicBackground" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1368 768" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -63,18 +70,29 @@
         </div>
     </header>
     <main>
-        <div class="about">
+        <div class="about" id="about">
             <div class="wrapper">
                 <div class="title">
                     <h3>Some things</h3>
                     <h2>About Me.</h2>
                 </div>
                 <div class="aboutText">
-                    <p>My name is Jenna Maaskant and I am a front end developer based in Toronto, Canada. I can speak html5, css3, scss, javascript, react.js, english, french and spanish. What I love most about programming is how perfectly it lets me use the left and right side of my brain to build beautiful, useful and accesible applications. I am most excited about expanding my javaScript and React.js skills. When I'm not coding you can find me kiteboarding on the great lakes or toiling away in my woodshop.  </p>
+                    <p>My name is Jenna Maaskant and I am a front end developer based in Toronto. I can speak html5, css3, scss, javascript, react.js, english, french and spanish. What I love most about programming is how perfectly it lets me use the left and right side of my brain to build beautiful, useful and accesible applications. I am most excited about expanding my javaScript and React.js skills. When I'm not coding you can find me kiteboarding on the great lakes or toiling away in my woodshop.  </p>
+                </div>
+                <div class="skillsIcon">
+                    <i class="devicon-github-plain colored"></i>
+                    <i class="devicon-css3-plain colored"></i>
+                    <i class="devicon-git-plain colored"></i>
+                    <i class="devicon-html5-plain colored"></i>
+                    <i class="devicon-javascript-plain colored"></i>
+                    <i class="devicon-jquery-plain colored"></i>
+                    <i class="devicon-react-original colored"></i>
+                    <i class="devicon-sass-original colored"></i>
+                    <img src="assets/firebase.svg" alt="">
                 </div>
             </div>
         </div>
-        <div class="works">
+        <div class="works" id="works">
             <div class="wrapper">
                 <div class="worksTop">
                     <div class="title">
@@ -86,49 +104,69 @@
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             <li class="unit">
-                                <a href="">
-                                    <div class="image">
+                                <div class="top">
+                                    <p>html5  |  css3  |  javaScript  |  jquery  |  APIs  </p>
+                                        <p><a href="https://github.com/jennamaask/nerdyValentines" target="_blank"><i class="fab fa-github"></i></a>
+                                        | <a href="">Live</a></p>
+                                </div>
+                                <div class="image">
+                                    <a href="">
                                         <img src="assets/valentinesImage.png" alt="">
+                                    </a>
                                     </div>
-                                </a>
-                                <p>html5 / css3 / javaScript / jquery/ APIs</p>
-                                    <p class="description">Love note generator that uses the numbers API to show off your intelligence along with your devotion.</p>
+                                <p class="description">Love note generator that uses the numbers API to show off your intelligence along with your feelings.</p>
                             </li>
                             <li class="unit">
-                                <a href="">
-                                    <div class="image">
+                                <div class="top">
+                                    <p>html5 | css3 | sass | javascript | jquery</p>
+                                        <p><a href="https://github.com/jennamaask/lifesABeach" target="_balnk"><i class="fab fa-github"></i></a>
+                                            | <a href="">Live</a></p>
+                                </div>
+                                <div class="image">
+                                    <a href="">
                                         <img src="assets/beachImage.png" alt="">
+                                    </a>
                                     </div>
-                                </a>
-                                    <p>html5 / css3 / sass / javascript / jquery</p>
-                                    <p class="description">A web application that applies user preferences to creates a virtual beach scene.</p>
+                                    <p class="description">A web application that applies user preferences to create a virtual beach scene.</p>
                             </li>
                             <li class="unit">
-                                <a href="">
-                                    <div class="image">
+                                <div class="top">
+                                    <p>html5 | css3 | sass | javascript | react | APIs | firebase</p>
+                                        <p><a href="https://github.com/jennamaask/goFlyAKite" target="_blank"><i class="fab fa-github"></i></a>
+                                            | <a href="">Live</a></p>
+                                </div>
+                                <div class="image">
+                                    <a href="">
                                         <img src="assets/flyAKiteImage.png" alt="">
+                                    </a>
                                     </div>
-                                </a>
-                                    <p>html5 / css3 / sass / javascript / jquery / APIs</p>
-                                    <p class="description">A online community where great lakes kitesurfers can report on current conditions at popular kiting spots all over the great lakes.</p>
+                                    <p class="description">A online community where great lakes kitesurfers can report on current conditions at popular kiting spots.</p>
                             </li>
                             <li class="unit">
-                                <a href="">
-                                    <div class="image">
+                                <div class="top">
+                                    <p>html | css3 | sass | javascript | jquery</p> 
+                                    <p><a href="https://github.com/jennamaask/sawHorseStudio" target="_blank"><i class="fab fa-github"></i></a>
+                                        | <a href="http://sawhorsestudio.ca/" target="_blank">Live</a></p>
+                                </div>
+                                <div class="image">
+                                    <a href="http://sawhorsestudio.ca/" target="_blank">
                                         <img src="assets/sawHorseStudioImage.png" alt="">
+                                    </a>
                                     </div>
-                                </a>
-                                <p>html / css3 / sass / javascript / jquery</p> 
-                                    <div class="description">Web site for my woodworking. </div>
+                                <p class="description">Web site for my woodworking. </p>
                             </li>
                             <li class="unit">
-                                <a href="">
-                                    <div class="image">
+                                <div class="top">
+                                    <p>html5 | css3 | sass | javascript | jquery | APIs </p>
+                                    <p><a href="https://github.com/jennamaaskantalliedeegan/project4" target="_blank"><i class="fab fa-github"></i></a>
+                                        | <a href="">Live</a></p>
+                                </div>
+                                <div class="image">
+                                    <a href="">
                                         <img src="assets/everybodyDiesImage.png" alt="">
+                                    </a>
                                     </div>
-                                </a>
-                                <p>html5 / css3 / sass / javascript / jquery / APIs</p>
-                                    <p class="description">Calculates your remaing life expectancy based on the World Populations API</p>
+                                    <p class="description">A countdown timer for the end of your life as calculated by the World Populations API</p>
                             </li>
                         </ul>
                     </div>
@@ -139,23 +177,21 @@
                 </div>
             </div>
         </div>
-        <div class="skils">
-
-        </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="wrapper">
                 <div class="title">
                     <h3>You should</h3>
                     <h2>Contact Me.</h2>
                 </div>
                 <div class="content">
-                    <p>jenna.maask@gmail.com</p>
-                    <p>+1 226 222 1991</p>
-                    <p>Toronto, Canada</p>
+                    <p>Send me an email at <a href="">jenna.maask@gmail.com</a> or leave me a message below</p>
                     <form action="">
-                        <input type="text">
-                        <input type="text">
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <label for="name" class="visuallyHidden">Name</label>
+                        <input type="text" name="name" id="name" placeholder="name" required>
+                        <label class="visuallyHidden" for="email" >Email</label>
+                        <input type="text" name="email" id="email" placeholder="email" required>
+                        <label class="visuallyHidden" for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
                         <input type="submit" value="Send">
                     </form>
                 </div>
@@ -163,6 +199,7 @@
         </div>
     </main>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.6/glide.min.js"></script>
 <script src="scripts/script.js"></script>

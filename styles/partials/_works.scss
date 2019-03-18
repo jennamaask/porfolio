@@ -12,18 +12,24 @@
 
 .works p {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .works {
     min-height: 100vh;
+    padding: 50px 0;
 }
 
 p.description{
     font-size: 1rem;
-    width: 70%;
+    width: 60%;
     text-align: center;
 }
+
+.works a {
+    font-size: 1.2rem;
+}
+
 
 // .worksTop {
 //     display: flex;
@@ -38,12 +44,21 @@ p.description{
 
 .image {
     width: 60%;
-    margin-bottom: 80px;
-    transition: width .5s;
+    margin: 60px 0;
+    transition: transform .5s;
 }
 
 .image:hover {
-    width: 70%;
+    transform: scale(1.1) translateY(5%);
+}
+
+p.description.visible {
+    opacity: 1;
+}
+
+p.description {
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 // .slide {
@@ -63,7 +78,7 @@ p.description{
     }
 }
 
-.works a {
+.works .image a {
     display: flex;
     justify-content: center;
 }
@@ -75,6 +90,23 @@ p.description{
     width: 70%;
 }
 
+.top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 60%;
+    align-items: center;
+}
+
+.top a {
+    transition: border-bottom .3s;
+    padding: 5px;
+    transition: border-bottom .3s;
+}
+.top a:hover {
+    border-bottom: 2px solid #FF0093;
+}
+
 .text {
     display: flex;
     flex-direction: column;
@@ -84,7 +116,7 @@ p.description{
 }
 
 .glide {
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .glide__arrow{
@@ -96,15 +128,28 @@ p.description{
     border: none;
     @include bodyText(1rem);
     top: 40%;
+    padding: 5px;
 }
 .glide__arrow--left {
     left: -40px;
     transform: rotate(-90deg);
 }
 
+.glide__arrow--left:hover {
+    border-bottom: 2px solid #FF0093;
+    left: -39px;
+    top: 39.85%;
+}
+
 .glide__arrow--right {
     right: -40px;
     transform: rotate(90deg) 
+}
+
+.glide__arrow--right:hover {
+    border-bottom: 2px solid #FF0093;
+    right: -39px;
+    top: 39.85%;
 }
 
 

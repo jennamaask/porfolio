@@ -1,7 +1,7 @@
 $headingFont: 'Poppins', sans-serif;
 $bodyFont: 'Lato', sans-serif;
 
-$primaryColor: #1a1717;
+$primaryColor: #2e2727;
 $secondaryColor: white;
 
 @mixin heading ($size) {
@@ -36,6 +36,7 @@ a {
 
 .wrapper {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 

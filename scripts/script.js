@@ -3,6 +3,8 @@ $image = $(".image");
 $worksH3 = $(".text h3");
 $worksP = $(".text p");
 $description = $(".description");
+$anchor = $("a");
+$image = $(".image");
 
 app = {}
 
@@ -62,10 +64,18 @@ app = {}
 //   direction: "alternate"
 // });
 new Glide(".glide", {
-    type: "carousel"
+    type: "carousel",
+    animationDuration: 1000
 }).mount()
 app.init = () => {
-    console.log("here we go")
+    $anchor.smoothScroll();
+    console.log("here we go");
+    $image.hover(() => {
+        $(".description").addClass("visible");
+    }, () => {
+        $(".description").removeClass("visible");
+    })
+
 }
 $(function(){
     app.init()

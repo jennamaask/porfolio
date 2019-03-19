@@ -58,7 +58,8 @@ input[type="text"], textarea {
     background:none;
     padding: 15px;
     margin: 10px;
-    font-family: $bodyFont
+    font-family: $bodyFont;
+    border-radius: 0;
 }
 
 input[type="text"]:focus, textarea:focus {

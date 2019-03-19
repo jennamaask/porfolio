@@ -16,7 +16,7 @@
 }
 
 .works {
-    padding: 50px 0;
+    padding: 70px 0 50px;
 }
 
 p.description{
@@ -43,12 +43,6 @@ p.description{
 
 p.description.visible {
     opacity: 1;
-}
-
-.glide:focus-within {
-    background: rgb(214, 213, 213);
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgb(190, 190, 190);
 }
 
 .unit {
@@ -131,14 +125,14 @@ p.description.visible {
 }
 
 .glide__arrow--right.desktop {
-    right: -40px;
+    right: -30px;
     transform: rotate(90deg) 
 }
 
 .glide__arrow--right.desktop:hover, .glide__arrow--right:focus {
     border-bottom: 2px solid $secondaryColor2;
-    right: -39px;
-    top: 39.85%;
+    right: -29px;
+    top: 39.8%;
 }
 
 img {
@@ -196,6 +190,12 @@ img {
     }
 }
 
+@media(max-width: 650px){
+    .image {
+        margin-bottom: 50px;
+    }
+}
+
 @media(max-width: 482px) {
     .top p:nth-of-type(1) {
         font-size: 1rem;
@@ -204,7 +204,7 @@ img {
         font-size: 3rem;
     }
     .image {
-        margin: 15px 0;
+        margin: 15px 0 50px;
     }
 }
 

@@ -232,11 +232,11 @@ header .wrapper {
     }
 
     header .wrapper {
-        justify-content: space-around;
+        justify-content: flex-end;
     }
 
     header .title {
-        margin-top: 150px;
+        margin-bottom: 50px;
     }
 }
 

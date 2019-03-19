@@ -399,10 +399,11 @@ header .wrapper {
   nav.dropDownMenu.open {
     right: 0; }
   header .wrapper {
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
   header .title {
-    margin-top: 150px; } }
+    margin-bottom: 50px; } }
 
 @media (max-width: 482px) {
   h1 {

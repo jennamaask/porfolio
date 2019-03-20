@@ -1,52 +1,51 @@
-$headingFont: 'Poppins', sans-serif;
-$bodyFont: 'Lato', sans-serif;
+$headingFont: "Poppins", sans-serif;
+$bodyFont: "Lato", sans-serif;
 
 $primaryColor: #2e2727;
 $secondaryColor: white;
 $secondaryColor2: #e1ce7a;
 
-@mixin heading ($size) {
-    font-family: $headingFont;
-    color: $primaryColor;
-    line-height: 1;
-    margin: 0;
-    font-size: $size;
+@mixin heading($size) {
+  font-family: $headingFont;
+  color: $primaryColor;
+  line-height: 1;
+  margin: 0;
+  font-size: $size;
 }
 
-@mixin bodyText ($size) {
-    color: $primaryColor;
-    font-family: $bodyFont;
-    font-size: $size;
-    line-height: 1.6;
+@mixin bodyText($size) {
+  color: $primaryColor;
+  font-family: $bodyFont;
+  font-size: $size;
+  line-height: 1.6;
 }
 
 body {
-    font-size: 125%;
-    background: $secondaryColor;
+  font-size: 125%;
+  background: $secondaryColor;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .wrapper {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 p {
-    @include bodyText (1rem);
+  @include bodyText(1rem);
 }
-@media(max-width:820px) {
-    .wrapper {
-        width: 90%;
-    }
+@media (max-width: 820px) {
+  .wrapper {
+    width: 90%;
+  }
 }
-

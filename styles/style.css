@@ -201,9 +201,9 @@ ul {
   text-align: right; }
 
 nav a {
-  -webkit-transition: border-bottom .5s;
-  -o-transition: border-bottom .5s;
-  transition: border-bottom .5s;
+  -webkit-transition: border-bottom 0.5s;
+  -o-transition: border-bottom 0.5s;
+  transition: border-bottom 0.5s;
   padding: 0 10px; }
 
 .socials a {
@@ -227,11 +227,11 @@ header a {
 svg.arrow {
   height: 70px;
   padding: 10px;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite; }
 
@@ -349,9 +349,9 @@ header .wrapper {
     display: block;
     position: absolute;
     border-radius: 5px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s; }
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
   .menu span:nth-child(1) {
     top: 20px; }
   .menu span.open:nth-child(1) {
@@ -378,9 +378,9 @@ header .wrapper {
     bottom: 0;
     right: -100%;
     width: 100%;
-    -webkit-transition: right .8s;
-    -o-transition: right .8s;
-    transition: right .8s;
+    -webkit-transition: right 0.8s;
+    -o-transition: right 0.8s;
+    transition: right 0.8s;
     background: rgba(255, 255, 255, 0.9);
     z-index: 20; }
     nav.dropDownMenu ul {
@@ -493,9 +493,9 @@ p.description {
 .works .description a {
   font-size: 1rem;
   border-bottom: 2px solid #e1ce7a;
-  -webkit-transition: border-top .5s;
-  -o-transition: border-top .5s;
-  transition: border-top .5s; }
+  -webkit-transition: border-top 0.5s;
+  -o-transition: border-top 0.5s;
+  transition: border-top 0.5s; }
 
 .works .description a:hover {
   border-top: 2px solid #e1ce7a; }
@@ -506,11 +506,11 @@ p.description {
 .image {
   width: 60%;
   margin: 60px 0;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  -o-transition: transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s; }
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s; }
 
 .image:focus {
   -webkit-transform: scale(1.1) translateY(5%);
@@ -570,11 +570,12 @@ p.description {
 .top a {
   border-bottom: 2px solid #e1ce7a;
   padding: 5px;
-  -webkit-transition: border-top .3s;
-  -o-transition: border-top .3s;
-  transition: border-top .3s; }
+  -webkit-transition: border-top 0.3s;
+  -o-transition: border-top 0.3s;
+  transition: border-top 0.3s; }
 
-.top a:hover, .top a:focus {
+.top a:hover,
+.top a:focus {
   border-top: 2px solid #e1ce7a; }
 
 .text {
@@ -621,7 +622,8 @@ p.description {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
-.glide__arrow--left.desktop:hover, .glide__arrow--left:focus {
+.glide__arrow--left.desktop:hover,
+.glide__arrow--left:focus {
   border-bottom: 2px solid #e1ce7a;
   left: -39px;
   top: 39.85%; }
@@ -632,7 +634,8 @@ p.description {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
-.glide__arrow--right.desktop:hover, .glide__arrow--right:focus {
+.glide__arrow--right.desktop:hover,
+.glide__arrow--right:focus {
   border-bottom: 2px solid #e1ce7a;
   right: -29px;
   top: 39.8%; }
@@ -673,7 +676,8 @@ img {
     display: none; } }
 
 @media (max-width: 768px) {
-  .works .description a:hover, .top a:hover {
+  .works .description a:hover,
+  .top a:hover {
     border-top: none; }
   .glide__arrow--left.desktop:hover {
     border-bottom: none;
@@ -702,7 +706,7 @@ img {
 
 @media (max-width: 400px) {
   .top p:nth-of-type(1) {
-    font-size: .8rem; } }
+    font-size: 0.8rem; } }
 
 .skills h3 {
   font-family: "Poppins", sans-serif;
@@ -740,7 +744,8 @@ img {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .skillsIcon i, .skillsIcon img {
+    .skillsIcon i,
+    .skillsIcon img {
       padding: 10px 20px; }
     .skillsIcon img {
       width: 104px;
@@ -806,9 +811,9 @@ img {
   top: 40px;
   left: 25px;
   opacity: 0;
-  -webkit-transition: opacity .3s;
-  -o-transition: opacity .3s;
-  transition: opacity .3s; }
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
 
 .floatingLabel {
   width: 50%;
@@ -817,14 +822,16 @@ img {
 .messageInput.floatingLabel {
   width: 100%; }
 
-.floatingLabel textarea:not(:placeholder-shown), .floatingLabel input:not(:placeholder-shown) {
+.floatingLabel textarea:not(:placeholder-shown),
+.floatingLabel input:not(:placeholder-shown) {
   padding: 20px 15px 10px; }
 
-.floatingLabel textarea:not(:placeholder-shown) + label, .floatingLabel input:not(:placeholder-shown) + label {
+.floatingLabel textarea:not(:placeholder-shown) + label,
+.floatingLabel input:not(:placeholder-shown) + label {
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
   transform: translateY(-40px);
-  opacity: .7; }
+  opacity: 0.7; }
 
 .contact p {
   font-size: 1.6rem; }
@@ -832,11 +839,12 @@ img {
 .contact .email {
   border-bottom: 2px solid #e1ce7a;
   padding: 5px 0;
-  -webkit-transition: border-top .3s;
-  -o-transition: border-top .3s;
-  transition: border-top .3s; }
+  -webkit-transition: border-top 0.3s;
+  -o-transition: border-top 0.3s;
+  transition: border-top 0.3s; }
 
-.contact .email:hover, .contact .email:focus {
+.contact .email:hover,
+.contact .email:focus {
   border-top: 2px solid #e1ce7a; }
 
 .contact .socials i {
@@ -846,11 +854,12 @@ img {
   margin: 0 10px;
   padding: 10px;
   border-bottom: 2px solid #e1ce7a;
-  -webkit-transition: border-top .5s;
-  -o-transition: border-top .5s;
-  transition: border-top .5s; }
+  -webkit-transition: border-top 0.5s;
+  -o-transition: border-top 0.5s;
+  transition: border-top 0.5s; }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
   border: none;
   border-bottom: 2px solid #2e2727;
   background: none;
@@ -860,7 +869,8 @@ input[type="text"], textarea {
   border-radius: 0;
   width: 100%; }
 
-input[type="text"]:focus, textarea:focus {
+input[type="text"]:focus,
+textarea:focus {
   border-bottom: 2px solid #e1ce7a; }
 
 .contact input[type="submit"] {
@@ -871,21 +881,23 @@ input[type="text"]:focus, textarea:focus {
   color: white;
   font-size: 1.2rem;
   font-family: "Lato", sans-serif;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   margin: 20px 0 40px;
   border-radius: 5px;
-  -webkit-transition: -webkit-box-shadow .3s;
-  transition: -webkit-box-shadow .3s;
-  -o-transition: box-shadow .3s;
-  transition: box-shadow .3s;
-  transition: box-shadow .3s, -webkit-box-shadow .3s;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
   width: 100%; }
 
-input[type="submit"]:focus, input[type="submit"]:hover {
+input[type="submit"]:focus,
+input[type="submit"]:hover {
   -webkit-box-shadow: 0 0 10px #e1ce7a;
   box-shadow: 0 0 10px #e1ce7a; }
 
-.contact .socials a:hover, .contact .socials a:focus {
+.contact .socials a:hover,
+.contact .socials a:focus {
   border-top: 2px solid #e1ce7a; }
 
 @media (max-width: 935px) {
@@ -897,7 +909,8 @@ input[type="submit"]:focus, input[type="submit"]:hover {
     font-size: 4rem; } }
 
 @media (max-width: 768px) {
-  .contact .email:hover, .contact .socials a:hover {
+  .contact .email:hover,
+  .contact .socials a:hover {
     border-top: none; }
   input[type="submit"]:hover {
     -webkit-box-shadow: none;

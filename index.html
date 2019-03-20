@@ -1,288 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Poppins:600" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.6/css/glide.core.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet"
-            href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon-180x180.png">
-    <link rel="icon" type="image/png" href="assets/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/favicons/android-chrome-192x192.png" sizes="192x192">
-    <meta name="msapplication-square70x70logo" content="assets/favicon/smalltile.png" />
-    <meta name="msapplication-square150x150logo" content="assets/favicon/mediumtile.png" />
-    <meta name="msapplication-wide310x150logo" content="assets/favicon/widetile.png" />
-    <meta name="msapplication-square310x310logo" content="assets/favicon/largetile.png" />
-    <link rel="stylesheet" href="styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Poppins:600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.6/css/glide.core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="assets/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="assets/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicons/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <meta
+      name="msapplication-square70x70logo"
+      content="assets/favicon/smalltile.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="assets/favicon/mediumtile.png"
+    />
+    <meta
+      name="msapplication-wide310x150logo"
+      content="assets/favicon/widetile.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="assets/favicon/largetile.png"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Jenna Maaskant</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- dropDownMenu for mobile and tablet starts -->
     <nav class="dropDownMenu">
-        <ul>
-            <li><a href="#about">About.</a></li>
-            <li><a href="#works">Works.</a></li>
-            <li><a href="#contact">Contact.</a></li>
-            <li class="socials"><a href="https://www.linkedin.com/in/jenna-maaskant-71463a169/"><i
-                class="fab fa-linkedin-in"></i></a><a href="https://twitter.com/jennamaaskant"><i
-                    class="fab fa-twitter"></i></a><a href="https://github.com/jennamaask"><i class="fab fa-github"></i></a>
-                </li>
+      <ul>
+        <li><a href="#about">About.</a></li>
+        <li><a href="#works">Works.</a></li>
+        <li><a href="#contact">Contact.</a></li>
+        <li class="socials">
+          <a href="https://www.linkedin.com/in/jenna-maaskant-71463a169/"
+            ><i class="fab fa-linkedin-in"></i></a
+          ><a href="https://twitter.com/jennamaaskant"
+            ><i class="fab fa-twitter"></i></a
+          ><a href="https://github.com/jennamaask"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end of dropDownMeny -->
+    <!-- Header Starts -->
+    <header>
+      <div class="overlay">
+        <div class="wrapper">
+          <div class="menu"> <!-- hamburger menu icon for mobile and tablet -->
+            <span></span>
+            <span></span>
+            <span></span>
+          </div> <!-- end of menu -->
+          <nav class="desktopMenu">
+            <ul>
+              <li><a href="#about">About.</a></li>
+              <li><a href="#works">Works.</a></li>
+              <li><a href="#contact">Contact.</a></li>
+              <li class="socials">
+                <a href="https://www.linkedin.com/in/jenna-maaskant-71463a169/"
+                  ><i class="fab fa-linkedin-in"></i></a
+                ><a href="https://twitter.com/jennamaaskant"
+                  ><i class="fab fa-twitter"></i></a
+                ><a href="https://github.com/jennamaask"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
             </ul>
-        </nav>
-        <header>
-            <div class="overlay">
-                <div class="wrapper">
-                    <div class="menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                <nav class="desktopMenu">
-                    <ul>
-                            <li><a href="#about">About.</a></li>
-                            <li><a href="#works">Works.</a></li>
-                            <li><a href="#contact">Contact.</a></li>
-                            <li class="socials"><a href="https://www.linkedin.com/in/jenna-maaskant-71463a169/"><i class="fab fa-linkedin-in"></i></a><a href="https://twitter.com/jennamaaskant"><i class="fab fa-twitter"></i></a><a href="https://github.com/jennamaask"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </nav>
-                <div class="title">
-                    <h1>
-                        I'm Jenna. 
-                    </h1>
-                    <h3>Nice to meet you.</h3>
-                </div>
-                <a href="#about">
-                    <svg class="arrow" xmlns:x="http://ns.adobe.com/Extensibility/1.0/" xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
-                        xmlns:graph="http://ns.adobe.com/Graphs/1.0/" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"
-                        style="enable-background:new 0 0 100 100;" xml:space="preserve">
-                        <switch>
-                            <foreignObject requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/" x="0" y="0" width="1"
-                                height="1" />
-                            <g i:extraneous="self">
-                                <polygon fill="#2e2727" points="2.5,30 10.1,22.5 50,62.4 89.9,22.5 97.5,30 50,77.5   " />
-                            </g>
-                        </switch>
-                    </svg>
-                </a>
-            </div>
+          </nav> <!-- end of desktopMenu -->
+          <div class="title">
+            <h1>
+              I'm Jenna.
+            </h1>
+            <h3>Nice to meet you.</h3>
+          </div> <!-- end of title -->
+          <a href="#about">
+            <svg
+              class="arrow"
+              xmlns:x="http://ns.adobe.com/Extensibility/1.0/"
+              xmlns:i="http://ns.adobe.com/AdobeIllustrator/10.0/"
+              xmlns:graph="http://ns.adobe.com/Graphs/1.0/"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 125"
+              style="enable-background:new 0 0 100 100;"
+              xml:space="preserve"
+            >
+              <switch>
+                <foreignObject
+                  requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+                  x="0"
+                  y="0"
+                  width="1"
+                  height="1"
+                />
+                <g i:extraneous="self">
+                  <polygon
+                    fill="#2e2727"
+                    points="2.5,30 10.1,22.5 50,62.4 89.9,22.5 97.5,30 50,77.5   "
+                  />
+                </g>
+              </switch>
+            </svg> <!-- end of down arrow svg -->
+          </a> <!-- end of down arrow link -->
         </div>
-            <svg class="dynamicBackground" width="100%" height="100vh" preserveAspectRatio="none" viewBox="0 0 1366 768" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path class="animate1"
-                    d="M1366,136v632H0V136c0,0,125.2-99.9,365.5-80.5c211,17,265,99,456,109c215,11.3,268,1,367-18
-		            c43.4-8.3,140-29,177-53" >
-                </path>
-                <path class="animate2"
-                    d="M1366,333.1V768H0V333.1c0,0,122.2,47.1,362.5,60.4c211,11.7,271,11,459-40.8c207.5-57.1,262.4-100.9,358-72.2
-		            c40,12,149,39.9,186,23.4" >
-                </path>
-                <path class="animate3"
-                    d="M1366,504.6V768H0V504.6c0,0,97.2-63.2,337.5-55.1c211,7.1,301.2-2.1,484,67c53,20,91,62,190,54
-		            c43.4-3.5,317-73.6,354-83.6" >
-                </path> -->
-                <path class="animate4"
-                 d="M1366,636.3V768H0V636.3c0,0,200.5,21.2,362.5,37.2c210,20.7,262-67.1,453-65c215,2.3,255-4,354-8
-		        c43.4-1.7,113-9,196,26.9" 
-                >
-                </path> 
-            
-            </svg>
-        </div>
-    </header>
+      </div> <!-- end of overlay -->
+      <svg
+        class="dynamicBackground"
+        width="100%"
+        height="100vh"
+        preserveAspectRatio="none"
+        viewBox="0 0 1366 768"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <path
+          class="animate1"
+          d="M1366,136v632H0V136c0,0,125.2-99.9,365.5-80.5c211,17,265,99,456,109c215,11.3,268,1,367-18
+		            c43.4-8.3,140-29,177-53"
+        ></path>
+        <path
+          class="animate2"
+          d="M1366,333.1V768H0V333.1c0,0,122.2,47.1,362.5,60.4c211,11.7,271,11,459-40.8c207.5-57.1,262.4-100.9,358-72.2
+		            c40,12,149,39.9,186,23.4"
+        ></path>
+        <path
+          class="animate3"
+          d="M1366,504.6V768H0V504.6c0,0,97.2-63.2,337.5-55.1c211,7.1,301.2-2.1,484,67c53,20,91,62,190,54
+		            c43.4-3.5,317-73.6,354-83.6"
+        ></path>
+        -->
+        <path
+          class="animate4"
+          d="M1366,636.3V768H0V636.3c0,0,200.5,21.2,362.5,37.2c210,20.7,262-67.1,453-65c215,2.3,255-4,354-8
+		        c43.4-1.7,113-9,196,26.9"
+        ></path>
+      </svg> <!-- end of dynamicBackground svg -->
+    </header> 
+    <!-- start of main -->
     <main>
-        <div class="about" id="about">
-            <div class="wrapper">
-                <div class="title">
-                    <h3>Some things</h3>
-                    <h2>About Me.</h2>
-                </div>
-                <div class="aboutText">
-                    <p>My name is Jenna Maaskant and I am a front end developer based in Toronto. I can speak English, French, Spanish, html5, css3, scss, javascript and react.js. What I love most about programming is how perfectly it lets me use the left and right side of my brain to build beautiful, useful and accesible applications. I am most excited about expanding my javaScript and React.js skills. When I'm not coding you can find me kiteboarding on the great lakes or toiling away in my woodshop.  </p>
-                </div>
-                <div class="skillsIcon">
-                    <i class="devicon-github-plain colored"></i>
-                    <i class="devicon-css3-plain colored"></i>
-                    <i class="devicon-git-plain colored"></i>
-                    <i class="devicon-html5-plain colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-jquery-plain colored"></i>
-                    <i class="devicon-react-original colored"></i>
-                    <i class="devicon-sass-original colored"></i>
-                    <img src="assets/firebase.svg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="works" id="works">
-            <div class="wrapper">
-                <div class="worksTop">
-                    <div class="title">
-                        <h3 class="subheading">Here are</h3>
-                        <h2>My Works.</h2>
-                    </div>
-                </div>
-                <div class="glide">
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left desktop" data-glide-dir="<">previous work</button>
-                        <button class="glide__arrow glide__arrow--right desktop" data-glide-dir=">">next work</button>
-                        <button class="glide__arrow glide__arrow--left mobile" data-glide-dir="<"><i class="fas fa-angle-left"></i></button>
-                        <button class="glide__arrow glide__arrow--right mobile" data-glide-dir=">"><i class="fas fa-angle-right"></i></button>
-                    </div>
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides">
-                            <li class="unit">
-                                <div class="top">
-                                    <p>html5 | css3 | javascript | react | firebase</p>
-                                        <p><a href="https://github.com/jennamaask/goFlyAKite" target="_blank"><i class="fab fa-github"></i></a>
-                                            | <a href="https://project-5-6cea6.firebaseapp.com/" target="_blank">Live</a></p>
-                                </div>
-                                <div class="image">
-                                    <a href="https://project-5-6cea6.firebaseapp.com/" targe="_blank">
-                                        <picture>
-                                            <source srcset="assets/flyAKiteImageMobile.png" media="(max-width: 650px)">
-                                            <img src="assets/flyAKiteImage.png" alt="Landing page of go fly a kite web page">
-                                        </picture>
-                                    </a>
-                                    </div>
-                                    <p class="description">A online community where great lake kitesurfers can report on current conditions at popular kiting spots.</p>
-                            </li>
-                            <li class="unit">
-                                <div class="top">
-                                    <p>html5  |  css3  |  javaScript  |  jquery  |  apis  </p>
-                                        <p><a href="https://github.com/jennamaask/nerdyValentines" target="_blank"><i class="fab fa-github"></i></a>
-                                        | <a href="http://jennamaaskant.com/nerdyValentines/" target="_blank">Live</a></p>
-                                </div>
-                                <div class="image">
-                                    <a href="http://jennamaaskant.com/nerdyValentines/" target="_blank">
-                                        <picture>
-                                            <source srcset="assets/valentinesImageMobile.png" media="(max-width: 650px)">
-                                            <img src="assets/valentinesImage.png" alt="Landing page of nerdy valentines web page.">
-                                        </picture>
-                                    </a>
-                                    </div>
-                                <p class="description">Love note generator that uses the numbers API to show off your intelligence along with your adoration.</p>
-                            </li>
-                            <li class="unit">
-                                <div class="top">
-                                    <p>html | css3 | sass | javascript | jquery</p> 
-                                    <p><a href="https://github.com/jennamaask/sawHorseStudio" target="_blank"><i class="fab fa-github"></i></a>
-                                        | <a href="http://sawhorsestudio.ca/" target="_blank">Live</a></p>
-                                </div>
-                                <div class="image">
-                                    <a href="http://sawhorsestudio.ca/" target="_blank">
-                                    <picture>
-                                        <source srcset="assets/sawHorseStudioImageMobile.png" media="(max-width: 650px)" >
-                                        <img src="assets/sawHorseStudioImage.png" alt="Landing page of saw horse studio web page">
-                                    </picture>
-                                    </a>
-                                    </div>
-                                <p class="description">Web site designed and built for my wood working business, Saw Horse Studio. </p>
-                            </li>
-                            <li class="unit">
-                                <div class="top">
-                                    <p>html5 | css3 | sass | javascript | jquery</p>
-                                        <p><a href="https://github.com/jennamaask/lifesABeach" target="_balnk"><i class="fab fa-github"></i></a>
-                                            | <a href="http://jennamaaskant.com/lifesABeach" target="_blank">Live</a></p>
-                                </div>
-                                <div class="image">
-                                    <a href="http://jennamaaskant.com/lifesABeach" target="_blank">
-                                        <picture>
-                                            <source srcset="assets/beachImageMobile.png" media="(max-width: 650px)">
-                                            <img src="assets/beachImage.png" alt="Landing page of life's a beach web page">
-                                        </picture>
-                                    </a>
-                                    </div>
-                                    <p class="description">A web application that applies user preferences to create a virtual beach scene.</p>
-                            </li>
-                            <li class="unit">
-                                <div class="top">
-                                    <p>html5 | css3 | sass | javascript | jquery | apis </p>
-                                    <p><a href="https://github.com/jennamaaskantalliedeegan/project4" target="_blank"><i class="fab fa-github"></i></a>
-                                        | <a href="http://jennamaaskant.com/everybodyDies" target="_blank">Live</a></p>
-                                </div>
-                                <div class="image">
-                                    <a href="http://jennamaaskant.com/everybodyDies" target="_blank">
-                                        <picture>
-                                            <source srcset="assets/everybodyDiesMobile.png" media="(max-width: 650px)">
-                                            <img src="assets/everybodyDiesImage.png" alt="Landing page of everybody dies web page.">
-                                        </picture>
-                                    </a>
-                                    </div>
-                                    <p class="description">A countdown timer for the end of your life as calculated by the World Populations API. Built with <a href="https://www.alliedeegan.com/">Allie Deegan.</a></p>
-                            </li>
-                            <li class="unit">
-                                <div class="top">
-                                    <p>html5 | css3 | javascript | react | apis | firebase </p>
-                                    <p><a href="https://github.com/quick-flick-picker/quickFlickPicker" target="_blank"><i
-                                                class="fab fa-github"></i></a>
-                                        | <a href="https://react-firebase-daeaf.firebaseapp.com/" target="_blank">Live</a></p>
-                                </div>
-                                <div class="image">
-                                    <a href="https://react-firebase-daeaf.firebaseapp.com/" target="_blank">
-                                        <picture>
-                                            <source srcset="assets/quickFlickImageMobile.png" media="(max-width: 650px)">
-                                            <img src="assets/quickFlickImage.png" alt="Landing page of quick flick picker website.">
-                                        </picture>
-                                    </a>
-                                </div>
-                                <p class="description">An interactive application to generate a movie suggestion from community created lists. Built with <a href="http://danocoder.com/">Dan O'Connor</a>, <a href="http://dennismcleodcodes.com/">Dennis McLeod</a> and <a href="http://jaimiejewell.com/">Jamie Jewell.</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="contact" id="contact">
-            <div class="wrapper">
-                <div class="title">
-                    <h3>You should</h3>
-                    <h2>Contact Me.</h2>
-                </div>
-                <div class="content">
-                    <p>Drop me a line at <a class="email"href="">hi-at-jennamaaskant.com</a> or leave me a message below.</p>
-                    <form action="">
-                        <div class="floatingLabel">
-                            <input type="text" name="name" id="name" placeholder="name" required>
-                            <label for="name" >name</label>
-                        </div>
-                        <div class="floatingLabel">
-                            <input type="text" name="email" id="email" placeholder="email" required>
-                            <label  for="email" >email</label>
-                        </div>
-                        <div class="floatingLabel messageInput">
-                            <textarea name="message" id="message" cols="30" rows="7" placeholder="message" required></textarea>
-                            <label for="message">message</label>
-                        </div>
-                        <input type="submit" value="Send">
-                    </form>
-                    <div class="socials">
-                            <a href="https://www.linkedin.com/in/jenna-maaskant-71463a169/"><i class="fab fa-linkedin-in"></i></a><a
-                                href="https://twitter.com/jennamaaskant"><i class="fab fa-twitter"></i></a><a
-                                href="https://github.com/jennamaask"><i class="fab fa-github"></i></a>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.6/glide.min.js"></script>
-<script src="scripts/script.js"></script>
-</body>
+      <div class="about" id="about">
+        <div class="wrapper">
+          <div class="title">
+            <h3>Some things</h3>
+            <h2>About Me.</h2>
+          </div> <!-- end of title -->
+          <div class="aboutText">
+            <p>
+              My name is Jenna Maaskant and I am a front end developer based in
+              Toronto. I can speak English, French, Spanish, html5, css3, scss,
+              javascript and react.js. What I love most about programming is how
+              perfectly it lets me use the left and right side of my brain to
+              build beautiful, useful and accesible applications. I am most
+              excited about expanding my javaScript and React.js skills. When
+              I'm not coding you can find me kiteboarding on the great lakes or
+              toiling away in my woodshop.
+            </p>
+          </div> <!-- end of aboutText -->
+          <div class="skillsIcon">
+            <i class="devicon-github-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-jquery-plain colored"></i>
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <img src="assets/firebase.svg" alt="" />
+          </div> <!-- end of skillsIcon -->
+        </div> <!-- end of wrapper -->
+      </div> <!-- end of about -->
+      <div class="works" id="works">
+        <div class="wrapper">
+          <div class="worksTop">
+            <div class="title">
+              <h3 class="subheading">Here are</h3>
+              <h2>My Works.</h2>
+            </div> <!-- end of title -->
+          </div> <!-- end of worksTop -->
+          <div class="glide">
+            <div class="glide__arrows" data-glide-el="controls">
+              <button
+                class="glide__arrow glide__arrow--left desktop"
+                data-glide-dir="<"
+              >
+                previous work
+              </button>
+              <button
+                class="glide__arrow glide__arrow--right desktop"
+                data-glide-dir=">"
+              >
+                next work
+              </button>
+              <button
+                class="glide__arrow glide__arrow--left mobile"
+                data-glide-dir="<"
+              >
+                <i class="fas fa-angle-left"></i>
+              </button>
+              <button
+                class="glide__arrow glide__arrow--right mobile"
+                data-glide-dir=">"
+              >
+                <i class="fas fa-angle-right"></i>
+              </button>
+            </div> <!-- end of glide__arrows -->
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="unit">
+                  <div class="top">
+                    <p>html5 | css3 | javascript | react | firebase</p>
+                    <p>
+                      <a
+                        href="https://github.com/jennamaask/goFlyAKite"
+                        target="_blank"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      |
+                      <a
+                        href="https://project-5-6cea6.firebaseapp.com/"
+                        target="_blank"
+                        >Live</a
+                      >
+                    </p>
+                  </div> <!-- end of top -->
+                  <div class="image">
+                    <a
+                      href="https://project-5-6cea6.firebaseapp.com/"
+                      targe="_blank"
+                    >
+                      <picture>
+                        <source
+                          srcset="assets/flyAKiteImageMobile.png"
+                          media="(max-width: 650px)"
+                        />
+                        <img
+                          src="assets/flyAKiteImage.png"
+                          alt="Landing page of go fly a kite web page"
+                        />
+                      </picture>
+                    </a>
+                  </div> <!-- end of image -->
+                  <p class="description">
+                    A online community where great lake kitesurfers can report
+                    on current conditions at popular kiting spots.
+                  </p>
+                </li> <!-- end of unit -->
+                <li class="unit">
+                  <div class="top">
+                    <p>html5 | css3 | javaScript | jquery | apis</p>
+                    <p>
+                      <a
+                        href="https://github.com/jennamaask/nerdyValentines"
+                        target="_blank"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      |
+                      <a
+                        href="http://jennamaaskant.com/nerdyValentines/"
+                        target="_blank"
+                        >Live</a
+                      >
+                    </p>
+                  </div> <!-- end of top -->
+                  <div class="image">
+                    <a
+                      href="http://jennamaaskant.com/nerdyValentines/"
+                      target="_blank"
+                    >
+                      <picture>
+                        <source
+                          srcset="assets/valentinesImageMobile.png"
+                          media="(max-width: 650px)"
+                        />
+                        <img
+                          src="assets/valentinesImage.png"
+                          alt="Landing page of nerdy valentines web page."
+                        />
+                      </picture>
+                    </a>
+                  </div> <!-- end of image -->
+                  <p class="description">
+                    Love note generator that uses the numbers API to show off
+                    your intelligence along with your adoration.
+                  </p>
+                </li> <!-- end of unit -->
+                <li class="unit">
+                  <div class="top">
+                    <p>html | css3 | sass | javascript | jquery</p>
+                    <p>
+                      <a
+                        href="https://github.com/jennamaask/sawHorseStudio"
+                        target="_blank"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      |
+                      <a href="http://sawhorsestudio.ca/" target="_blank"
+                        >Live</a
+                      >
+                    </p>
+                  </div> <!-- end of top -->
+                  <div class="image">
+                    <a href="http://sawhorsestudio.ca/" target="_blank">
+                      <picture>
+                        <source
+                          srcset="assets/sawHorseStudioImageMobile.png"
+                          media="(max-width: 650px)"
+                        />
+                        <img
+                          src="assets/sawHorseStudioImage.png"
+                          alt="Landing page of saw horse studio web page"
+                        />
+                      </picture>
+                    </a>
+                  </div> <!-- end of image -->
+                  <p class="description">
+                    Web site designed and built for my wood working business,
+                    Saw Horse Studio.
+                  </p>
+                </li> <!-- end of unit -->
+                <li class="unit">
+                  <div class="top">
+                    <p>html5 | css3 | sass | javascript | jquery</p>
+                    <p>
+                      <a
+                        href="https://github.com/jennamaask/lifesABeach"
+                        target="_balnk"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      |
+                      <a
+                        href="http://jennamaaskant.com/lifesABeach"
+                        target="_blank"
+                        >Live</a
+                      >
+                    </p>
+                  </div> <!-- end of top -->
+                  <div class="image">
+                    <a
+                      href="http://jennamaaskant.com/lifesABeach"
+                      target="_blank"
+                    >
+                      <picture>
+                        <source
+                          srcset="assets/beachImageMobile.png"
+                          media="(max-width: 650px)"
+                        />
+                        <img
+                          src="assets/beachImage.png"
+                          alt="Landing page of life's a beach web page"
+                        />
+                      </picture>
+                    </a>
+                  </div> <!-- end of image -->
+                  <p class="description">
+                    A web application that applies user preferences to create a
+                    virtual beach scene.
+                  </p>
+                </li> <!-- end of unit -->
+                <li class="unit">
+                  <div class="top">
+                    <p>html5 | css3 | sass | javascript | jquery | apis</p>
+                    <p>
+                      <a
+                        href="https://github.com/jennamaaskantalliedeegan/project4"
+                        target="_blank"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      |
+                      <a
+                        href="http://jennamaaskant.com/everybodyDies"
+                        target="_blank"
+                        >Live</a
+                      >
+                    </p>
+                  </div> <!-- end of top -->
+                  <div class="image">
+                    <a
+                      href="http://jennamaaskant.com/everybodyDies"
+                      target="_blank"
+                    >
+                      <picture>
+                        <source
+                          srcset="assets/everybodyDiesMobile.png"
+                          media="(max-width: 650px)"
+                        />
+                        <img
+                          src="assets/everybodyDiesImage.png"
+                          alt="Landing page of everybody dies web page."
+                        />
+                      </picture>
+                    </a>
+                  </div> <!-- end of image -->
+                  <p class="description">
+                    A countdown timer for the end of your life as calculated by
+                    the World Populations API. Built with
+                    <a href="https://www.alliedeegan.com/">Allie Deegan.</a>
+                  </p>
+                </li> <!-- end of unit -->
+                <li class="unit">
+                  <div class="top">
+                    <p>html5 | css3 | javascript | react | apis | firebase</p>
+                    <p>
+                      <a
+                        href="https://github.com/quick-flick-picker/quickFlickPicker"
+                        target="_blank"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      |
+                      <a
+                        href="https://react-firebase-daeaf.firebaseapp.com/"
+                        target="_blank"
+                        >Live</a
+                      >
+                    </p>
+                  </div> <!-- end of top -->
+                  <div class="image">
+                    <a
+                      href="https://react-firebase-daeaf.firebaseapp.com/"
+                      target="_blank"
+                    >
+                      <picture>
+                        <source
+                          srcset="assets/quickFlickImageMobile.png"
+                          media="(max-width: 650px)"
+                        />
+                        <img
+                          src="assets/quickFlickImage.png"
+                          alt="Landing page of quick flick picker website."
+                        />
+                      </picture>
+                    </a>
+                  </div> <!-- end of image -->
+                  <p class="description">
+                    An interactive application to generate a movie suggestion
+                    from community created lists. Built with
+                    <a href="http://danocoder.com/">Dan O'Connor</a>,
+                    <a href="http://dennismcleodcodes.com/">Dennis McLeod</a>
+                    and <a href="http://jaimiejewell.com/">Jamie Jewell.</a>
+                  </p>
+                </li> <!-- end of unit -->
+              </ul> <!-- end of glide__slides -->
+            </div> <!-- end of glide__track -->
+          </div> <!-- end of glide -->
+        </div> <!-- end of wrapper -->
+      </div> <!-- end of works -->
+      <div class="contact" id="contact">
+        <div class="wrapper">
+          <div class="title">
+            <h3>You should</h3>
+            <h2>Contact Me.</h2>
+          </div> <!-- end of title -->
+          <div class="content">
+            <p>
+              Drop me a line at
+              <a class="email" href="">hi-at-jennamaaskant.com</a> or leave me a
+              message below.
+            </p>
+            <form
+              action="https://formspree.io/jenna.maask@gmail.com"
+              method="POST"
+            >
+              <div class="floatingLabel">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="name"
+                  required
+                /> 
+                <label for="name">name</label>
+              </div> <!-- end of floating Label -->
+              <div class="floatingLabel">
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                  required
+                />
+                <label for="email">email</label>
+              </div> <!-- end of floatingLabel -->
+              <div class="floatingLabel messageInput">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="7"
+                  placeholder="message"
+                  required
+                ></textarea>
+                <label for="message">message</label>
+              </div> <!-- end of floatingLabel and messageInput -->
+              <input type="submit" value="Send" />
+            </form>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/jenna-maaskant-71463a169/"
+                ><i class="fab fa-linkedin-in"></i></a
+              ><a href="https://twitter.com/jennamaaskant"
+                ><i class="fab fa-twitter"></i></a
+              ><a href="https://github.com/jennamaask"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div> <!-- end of socials -->
+          </div> <!-- end of content -->
+        </div> <!-- wrapper -->
+      </div> <!-- end of contact -->
+    </main> 
+    <!-- javaScript CDNs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.6/glide.min.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>

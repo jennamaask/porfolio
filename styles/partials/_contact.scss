@@ -1,161 +1,168 @@
 .contact h3 {
-    @include heading(1.5rem)
+  @include heading(1.5rem);
 }
 
 .contact h2 {
-    @include heading(5rem)
+  @include heading(5rem);
 }
 
 .contact {
-    padding: 100px 0 50px;
-    .title {
-        align-self: flex-start
+  padding: 100px 0 50px;
+  .title {
+    align-self: flex-start;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    width: 60%;
+    margin: 0 auto;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 1rem;
+    textarea {
+      resize: none;
     }
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 0;
-        width: 60%;
-        margin: 0 auto;
-    }
-    form {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        font-size: 1rem;
-        textarea {
-            resize: none;
-        }
-    }
+  }
 }
 
 .contact label {
-    position: absolute;
-    @include bodyText(1rem);
-    top:40px;
-    left: 25px;
-    opacity: 0;
-    transition: opacity .3s;
+  position: absolute;
+  @include bodyText(1rem);
+  top: 40px;
+  left: 25px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .floatingLabel {
-    width: 50%;
-    position: relative;
+  width: 50%;
+  position: relative;
 }
 
 .messageInput.floatingLabel {
-    width: 100%;
+  width: 100%;
 }
 
-.floatingLabel textarea:not(:placeholder-shown), .floatingLabel input:not(:placeholder-shown) {
-    padding: 20px 15px 10px;
+.floatingLabel textarea:not(:placeholder-shown),
+.floatingLabel input:not(:placeholder-shown) {
+  padding: 20px 15px 10px;
 }
 
-.floatingLabel textarea:not(:placeholder-shown) + label, .floatingLabel input:not(:placeholder-shown) + label {
-    transform: translateY(-40px);
-    opacity: .7;
+.floatingLabel textarea:not(:placeholder-shown) + label,
+.floatingLabel input:not(:placeholder-shown) + label {
+  transform: translateY(-40px);
+  opacity: 0.7;
 }
 
 .contact p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .contact .email {
-    border-bottom: 2px solid $secondaryColor2;
-    padding: 5px 0;
-    transition: border-top .3s;
+  border-bottom: 2px solid $secondaryColor2;
+  padding: 5px 0;
+  transition: border-top 0.3s;
 }
 
-.contact .email:hover, .contact .email:focus {
-    border-top: 2px solid $secondaryColor2
+.contact .email:hover,
+.contact .email:focus {
+  border-top: 2px solid $secondaryColor2;
 }
 
-.contact .socials i{
-    font-size: 2rem;
+.contact .socials i {
+  font-size: 2rem;
 }
 
 .contact .socials a {
-    margin:0 10px;
-    padding: 10px;
-    border-bottom: 2px solid $secondaryColor2;
-    transition: border-top .5s;
+  margin: 0 10px;
+  padding: 10px;
+  border-bottom: 2px solid $secondaryColor2;
+  transition: border-top 0.5s;
 }
 
-input[type="text"], textarea {
-    border: none;
-    border-bottom: 2px solid $primaryColor;
-    background:none;
-    padding: 15px;
-    margin: 10px;
-    font-family: $bodyFont;
-    border-radius: 0;
-    width: 100%;
+input[type="text"],
+textarea {
+  border: none;
+  border-bottom: 2px solid $primaryColor;
+  background: none;
+  padding: 15px;
+  margin: 10px;
+  font-family: $bodyFont;
+  border-radius: 0;
+  width: 100%;
 }
 
-input[type="text"]:focus, textarea:focus {
-    border-bottom: 2px solid $secondaryColor2;
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 2px solid $secondaryColor2;
 }
 
 .contact input[type="submit"] {
-    border: none;
-    background: none;
-    background: $secondaryColor2;
-    padding: 10px 20px;
-    color: white;
-    font-size: 1.2rem;
-    font-family: $bodyFont;
-    letter-spacing: .2rem;
-    margin: 20px 0 40px;
-    border-radius: 5px;
-    transition: box-shadow .3s;
-    width: 100%;
+  border: none;
+  background: none;
+  background: $secondaryColor2;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2rem;
+  font-family: $bodyFont;
+  letter-spacing: 0.2rem;
+  margin: 20px 0 40px;
+  border-radius: 5px;
+  transition: box-shadow 0.3s;
+  width: 100%;
 }
 
-input[type="submit"]:focus, input[type="submit"]:hover {
-    box-shadow: 0 0 10px $secondaryColor2;
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  box-shadow: 0 0 10px $secondaryColor2;
 }
 
-.contact .socials a:hover, .contact .socials a:focus{
-    border-top: 2px solid $secondaryColor2
+.contact .socials a:hover,
+.contact .socials a:focus {
+  border-top: 2px solid $secondaryColor2;
 }
 
-@media(max-width: 935px) {
-    .contact .content {
-        width: 80%;
-    }
+@media (max-width: 935px) {
+  .contact .content {
+    width: 80%;
+  }
 }
 
-@media(max-width: 820px){
-    .contact h2 {
-        font-size: 4rem;
-    }
+@media (max-width: 820px) {
+  .contact h2 {
+    font-size: 4rem;
+  }
 }
 
-@media(max-width: 768px) {
-    .contact .email:hover, .contact .socials a:hover {
+@media (max-width: 768px) {
+  .contact .email:hover,
+  .contact .socials a:hover {
     border-top: none;
-    }
-    input[type="submit"]:hover {
-        box-shadow: none;
-    }
+  }
+  input[type="submit"]:hover {
+    box-shadow: none;
+  }
 }
 
-@media(max-width:482px){
-    .contact h2 {
-        font-size: 3rem;
-    }
-    .contact p {
-        font-size: 1rem;
-    }
-    .contact .email {
-        font-size: 1rem;
-    }
-    .contact .floatingLabel {
-        width: 100%;
-    }
-    .contact .content {
-        padding-top: 20px;
-    }
+@media (max-width: 482px) {
+  .contact h2 {
+    font-size: 3rem;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
+  .contact .email {
+    font-size: 1rem;
+  }
+  .contact .floatingLabel {
+    width: 100%;
+  }
+  .contact .content {
+    padding-top: 20px;
+  }
 }
-

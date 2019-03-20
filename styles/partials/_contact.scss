@@ -24,13 +24,37 @@
         flex-wrap: wrap;
         width: 100%;
         font-size: 1rem;
-        input{
-            width: calc(50% - 20px);
-        }
         textarea {
-            width: 100%;
+            resize: none;
         }
     }
+}
+
+.contact label {
+    position: absolute;
+    @include bodyText(1rem);
+    top:40px;
+    left: 25px;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.floatingLabel {
+    width: 50%;
+    position: relative;
+}
+
+.messageInput.floatingLabel {
+    width: 100%;
+}
+
+.floatingLabel textarea:not(:placeholder-shown), .floatingLabel input:not(:placeholder-shown) {
+    padding: 20px 15px 10px;
+}
+
+.floatingLabel textarea:not(:placeholder-shown) + label, .floatingLabel input:not(:placeholder-shown) + label {
+    transform: translateY(-40px);
+    opacity: .7;
 }
 
 .contact p {
@@ -49,7 +73,13 @@
 
 .contact .socials i{
     font-size: 2rem;
-    transition: border-bottom .3s;
+}
+
+.contact .socials a {
+    margin:0 10px;
+    padding: 10px;
+    border-bottom: 2px solid $secondaryColor2;
+    transition: border-top .5s;
 }
 
 input[type="text"], textarea {
@@ -60,6 +90,7 @@ input[type="text"], textarea {
     margin: 10px;
     font-family: $bodyFont;
     border-radius: 0;
+    width: 100%;
 }
 
 input[type="text"]:focus, textarea:focus {
@@ -86,7 +117,7 @@ input[type="submit"]:focus, input[type="submit"]:hover {
 }
 
 .contact .socials a:hover, .contact .socials a:focus{
-    border-bottom: 2px solid $secondaryColor2
+    border-top: 2px solid $secondaryColor2
 }
 
 @media(max-width: 935px) {
@@ -101,6 +132,15 @@ input[type="submit"]:focus, input[type="submit"]:hover {
     }
 }
 
+@media(max-width: 768px) {
+    .contact .email:hover, .contact .socials a:hover {
+    border-top: none;
+    }
+    input[type="submit"]:hover {
+        box-shadow: none;
+    }
+}
+
 @media(max-width:482px){
     .contact h2 {
         font-size: 3rem;
@@ -111,8 +151,11 @@ input[type="submit"]:focus, input[type="submit"]:hover {
     .contact .email {
         font-size: 1rem;
     }
-    .contact form input {
+    .contact .floatingLabel {
         width: 100%;
+    }
+    .contact .content {
+        padding-top: 20px;
     }
 }
 

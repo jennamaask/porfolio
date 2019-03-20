@@ -21,7 +21,7 @@ app.morph1 = anime({
 
   ],
     easing: [0.5, 0, 0.5, 1],
-  duration: anime.random(13000, 20000),
+  duration: anime.random(10000, 20000),
   loop: true,
   direction: "alternate"
 });
@@ -35,7 +35,7 @@ app.morph2 = anime({
     }
   ],
     easing: [0.5, 0, 0.5, 1],
-  duration: anime.random(13000, 20000),
+  duration: anime.random(10000, 20000),
   loop: true,
   direction: "alternate"
 });
@@ -49,7 +49,7 @@ app.morph3 = anime({
     }
   ],
   easing: [0.5, 0, 0.5, 1],
-  duration: anime.random(13000, 20000),
+  duration: anime.random(10000, 20000),
   loop: true,
   direction: "alternate"
 });
@@ -63,7 +63,7 @@ app.morph4 = anime({
     }
   ],
     easing: [0.5, 0, 0.5, 1],
-  duration: anime.random(13000, 20000),
+  duration: anime.random(10000, 20000),
   loop: true,
   direction: "alternate"
 });
@@ -74,12 +74,6 @@ new Glide(".glide", {
 }).mount()
 app.init = () => {
     $anchor.smoothScroll();
-    console.log("here we go");
-    $image.hover(() => {
-        $(".description").addClass("visible");
-    }, () => {
-        $(".description").removeClass("visible");
-    });
     $menu.on("click", ()=> {
         $("span").toggleClass("open");
         $(".dropDownMenu").toggleClass("open");

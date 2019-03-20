@@ -23,8 +23,16 @@ p.description{
     font-size: 1rem;
     width: 60%;
     text-align: center;
-    opacity: 0;
-    transition: opacity 1s;
+}
+
+.works .description a {
+    font-size: 1rem;
+    border-bottom: 2px solid $secondaryColor2;
+    transition: border-top .5s;
+}
+
+.works .description a:hover {
+    border-top: 2px solid $secondaryColor2;
 }
 
 .works a {
@@ -37,12 +45,8 @@ p.description{
     transition: transform .5s;
 }
 
-.image:hover, .image:focus {
+.image:focus {
     transform: scale(1.1) translateY(5%);
-}
-
-p.description.visible {
-    opacity: 1;
 }
 
 .unit {
@@ -77,12 +81,12 @@ p.description.visible {
 }
 
 .top a {
-    transition: border-bottom .3s;
+    border-bottom: 2px solid $secondaryColor2;
     padding: 5px;
-    transition: border-bottom .3s;
+    transition: border-top .3s;
 }
 .top a:hover, .top a:focus {
-    border-bottom: 2px solid $secondaryColor2;
+    border-top: 2px solid $secondaryColor2;
 }
 
 .text {
@@ -91,6 +95,10 @@ p.description.visible {
     justify-content: space-between;
     padding-right: 10px;
     text-align: left;
+}
+
+.glide__slides {
+    padding: 5px 0;
 }
 
 .glide {
@@ -184,13 +192,26 @@ img {
     }
 }
 
-@media(max-width: 650px){
-    .top {
-        width: 100%;
+@media(max-width: 768px){
+    .works .description a:hover, .top a:hover {
+        border-top: none;
+    }
+    .glide__arrow--left.desktop:hover {
+        border-bottom: none;
+        left: -40px;
+        top: 40%;
+    }
+    .glide__arrow--right.desktop:hover {
+        border-bottom: 2px solid $secondaryColor2;
+        right: -30px;
+        top: 40%;
     }
 }
 
 @media(max-width: 650px){
+    .top {
+        width: 100%;
+    }
     .image {
         margin-bottom: 50px;
     }
@@ -205,6 +226,9 @@ img {
     }
     .image {
         margin: 15px 0 50px;
+    }
+    .glide {
+        padding-top: 20px;
     }
 }
 

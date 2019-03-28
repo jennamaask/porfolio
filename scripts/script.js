@@ -5,7 +5,7 @@ $about = $(".about");
 $desktopMenu = $(".desktopMenu");
 $span = $("span");
 $dropDownMenu = $(".dropDownMenu");
-$dropDownLinks = $("dropDownMenu a");
+$dropDownLinks = $(".dropDownMenu a");
 
 // setting up name spacing
 app = {};
@@ -76,7 +76,9 @@ new Glide(".glide", {
 //event listeners
 app.init = () => {
   //smooth scroll
-  $anchor.smoothScroll();
+  $anchor.smoothScroll({
+    speed: 1200
+  });
   //on click of the hamburger menu icon change to "x" and display menu
   $menu.on("click", () => {
     $span.toggleClass("open");
